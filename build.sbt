@@ -8,7 +8,7 @@ version := "0.1-SNAPSHOT"
 
 organization := "io.m2m.mqtt"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.11.7"
 
 scalacOptions += "-deprecation"
 
@@ -21,19 +21,19 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-	"com.typesafe.akka" %% "akka-actor" % "2.2.0",
-  "com.typesafe.akka" %% "akka-remote" % "2.2.0",
-	"com.typesafe" % "config" % "1.0.2",
-	"org.scala-lang" % "scala-reflect" % "2.10.2",
-	"org.joda" % "joda-convert" % "1.4",
-	"joda-time" % "joda-time" % "2.3",
-	"org.fusesource.mqtt-client" % "mqtt-client" % "1.5",
-	"org.json4s" %% "json4s-native" % "3.1.0",
-	"org.scalatest" %% "scalatest" % "2.0.M5b" % "test",
-	"org.mashupbots.socko" %% "socko-webserver" % "0.3.0",
-	"net.databinder.dispatch" %% "dispatch-core" % "0.11.0",
-	"ch.qos.logback" % "logback-classic" %"1.0.1",
-	"org.apache.kafka" % "kafka_2.10" % "0.8.0" exclude("com.sun.jdmk", "jmxtools") exclude("com.sun.jmx", "jmxri"),
-	"net.sf.xenqtt" % "xenqtt" % "0.9.3"
+	"com.typesafe.akka" %% "akka-actor" % "2.3.12",
+        "com.typesafe.akka" %% "akka-remote" % "2.3.12",
+	"com.typesafe" % "config" % "1.3.0",
+	"org.scala-lang" % "scala-reflect" % "2.11.7",
+	"org.joda" % "joda-convert" % "1.7",
+	"joda-time" % "joda-time" % "2.8.1",
+	"org.fusesource.mqtt-client" % "mqtt-client" % "1.10",
+	"org.json4s" %% "json4s-native" % "3.2.11",
+	"org.scalatest" %% "scalatest" % "3.0.0-SNAP5" % "test",
+	"org.mashupbots.socko" %% "socko-webserver" % "0.6.0",
+	"net.databinder.dispatch" %% "dispatch-core" % "0.11.3",
+	"ch.qos.logback" % "logback-classic" %"1.1.3",
+	"org.apache.kafka" %% "kafka" % "0.8.2.1" exclude("com.sun.jdmk", "jmxtools") exclude("com.sun.jmx", "jmxri"),
+	"net.sf.xenqtt" % "xenqtt" % "0.9.7"
 )
 
